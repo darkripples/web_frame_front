@@ -33,17 +33,6 @@ function getUrlParams(location_search){
 }
 
 /**
- * 获取URL中携带的参数
- * @param name 参数名
- */
-
-function getQueryString(name){
-    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-    var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
-    if(r!=null)return  unescape(r[2]); return null;
-}
-
-/**
  * 获取当前系统日期 yyyy-mm-dd
  * 
  */
@@ -306,27 +295,4 @@ function __goPage(funcName) {
     }else{
         eval(funcName + "(" + pageNum + ")");
     }
-}
-
-/**
- * 解析URL参数
- * @param url
- * @return json格式的参数
- */
-function getParams(url){
-    let paramJson = {};
-    let urls = url.split("?");
-    if(urls && urls.length == 2){
-        let paramStr = urls[1];
-        let paramStrs = paramStr.split("&");
-        if(paramStrs && paramStrs.length > 0){
-            for(let i=0; i<paramStrs.length; i++){
-                let key = paramStrs[i].split("=")[0];
-                let value = paramStrs[i].split("=")[1];
-                paramJson[key] = value.split("#")[0];
-            }
-            return paramJson;
-        }
-    }
-    return "";
 }

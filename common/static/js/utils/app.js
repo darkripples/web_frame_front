@@ -231,3 +231,8 @@ function __doneErr(jsonObj){
 	let code = jsonObj.status;
 	console.log(jsonObj);
 }
+
+if(!sysconf.DEV_MODE){
+	console.log("%cDarkRipples%c\n  黑色涟漪"+" © "+(new Date).getFullYear(),"font-size:96px;color:#3b3e43","font-size:12px;color:rgba(0,0,0,0.38);");
+}
+

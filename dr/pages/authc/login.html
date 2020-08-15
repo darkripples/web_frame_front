@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登录 - 黑色涟漪</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" media="screen"/>
+    <link rel="stylesheet" media="screen" href="/dr_resources/pages/authc/login.css">
+</head>
+<body>
+<!-- particles.js container -->
+<div id="particles-js" style="display: flex;align-items: center;justify-content: center">
+</div>
+
+<div class="login-page" id="v" v-cloak>
+    <div class="login-content">
+        <div class="login-tit">登录</div>
+        <div class="login-input">
+            <input v-model="account" @change="showPic()" type="text" placeholder="用户名">
+        </div>
+        <div class="login-input">
+            <input v-model="pwd" type="password" placeholder="密码">
+        </div>
+        <div class="login-input" >
+            <input style="width:40%" v-if="isShowPic" v-model="authCode" type="text" placeholder="验证码">
+            <img style="padding-left: 10px;cursor: pointer;" v-if="isShowPic" id="verifyCodeImg" class="codeimg" :src="verifyCodeImg" @click="changeCode()"
+             onmouseover="$(this).attr('title', '点击刷新')"/>
+        </div>
+        <div class="login-btn">
+            <div class="login-btn-left">
+                <span @click="doLogin()" id="loginBtn">登录</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/common/static/js/libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/common/static/js/utils/base.js"></script>
+<script type="text/javascript" src="/common/static/js/conf/config_dr.js"></script>
+<script type="text/javascript" src="/common/static/js/utils/utils.js"></script>
+<script type="text/javascript" src="/common/static/js/libs/jquery/jquery.md5.js"></script>
+<script type="text/javascript" src="/common/static/js/libs/particles.js"></script>
+<script type="text/javascript" src="/dr_resources/pages/authc/login.js"></script>
+</body>
+</html>

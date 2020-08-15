@@ -12,7 +12,7 @@ $(function () {
                 // 主内容
                 that.indexList();
                 // 锚点确定
-                // $("#headerDown").click();
+                $("#headerDown").click();
                 // 副标题设置
                 that.setTitle();
                 setTimeout(function(){
@@ -26,6 +26,7 @@ $(function () {
                 let that = this;
                 app.request(URL_BLOG.TYPES_LIST, {}, function (json) {
                     that.listData = json.data;
+                    window.sessionStorage.setItem("dr_blog_types", JSON.stringify(json.data));
                 }, null, shouldShowLoading = false, method = 'GET');
 
             },

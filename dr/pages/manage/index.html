@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Manage - 黑色涟漪</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" media="screen"/>
+        <link rel="stylesheet" href="/common/static/vendor/layui/css/layui.css">
+        <link rel="stylesheet" href="/common/static/css/manage/style.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div id="navbar" class="wrapper" v-cloak>
+            <div class="aside">
+                <div class="logo">
+                    <img src="/common/static/img/fls.jpg" height="40">
+                </div>
+                <ul class="custom-nav">
+                	<li v-for="(item, index) in menuLst" class="custom-nav-item opend">
+                        <a v-if="item.hasChildren" href="javascript: void(0)" class="custom-nav-link" :id="item.menuId" @click="menuOpen(item.menuId)"><i :class="item.icon"></i> {{item.showName}}<span></span></a>
+                        <a v-else href="javascript: void(0)" @click="addTab(item.menuId)" :id="item.menuId" :data-url="item.href"
+                            :data-title="item.showName" :class="index==0 ? 'active' : ''"><i :class="item.icon"></i> {{item.showName}}</a>
+                		<dl v-if="item.hasChildren" class="custom-nav-child">
+                			<dd v-for="(child, jndex) in item.children">
+                                <a href="javascript:void(0);" @click="addTab(child.menuId)" :id="child.menuId"
+                                    :data-url="child.href" :data-title="child.showName" data-child="1" 
+                                    :class="(index==0 && jndex==0) ? 'active' : ''">{{child.showName}}</a>
+                            </dd>
+                		</dl>
+                	</li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="header">
+                    <span>{{webName}}</span>
+                    <div class="userinfo">
+                    	<span><a href="javascript:void(0);" @click="addTab('setting')" id="setting" data-url="/web/pages/ucenter/setting.html"
+                                        data-title="个人中心" class="changpwd">您好！{{userName}}</a></span>
+                    	<a href="javascript:void(0);" @click="repassword()" class="changpwd">修改密码</a> |
+                    	<a href="javascript:void(0);" @click="logout()" class="logout">退出登录</a>
+                    </div>
+                </div>
+                <div class="layui-tab" lay-filter="tab-container" lay-allowclose="true">
+                    <ul class="layui-tab-title" id="tablist" style="padding: 4px 0 0"></ul>
+                    <div class="layui-tab-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/common/static/js/libs/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/common/static/js/utils/base.js"></script>
+        <script type="text/javascript" src="/common/static/js/conf/config_dr.js"></script>
+        <script type="text/javascript" src="/common/static/js/utils/utils.js"></script>
+        <script src="/common/static/vendor/layui/layui.all.js" charset="utf-8"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
+<style>.layui-tab-bar{height: 44px;}</style>

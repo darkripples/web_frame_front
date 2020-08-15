@@ -1,5 +1,7 @@
 function app() {}
 
+top = top || window;
+
 app.getCookie = function(name) {
     var cookieValue = null;
     if (document.cookie && document.cookie != '') {
@@ -43,6 +45,14 @@ app.removeToken = function(){
 	window.sessionStorage.removeItem('dr_token');
 };
 
+/**
+ * 清除会话存储
+ */
+app.clrSessionStorage = function(){
+    window.sessionStorage.removeItem('dr_token');
+    window.sessionStorage.removeItem('dr_menuLst');
+    window.sessionStorage.removeItem('dr_userInfo');
+}
 
 /**
  * ajax请求，可以选择是否显示加载中
@@ -73,6 +83,7 @@ app.request = function (url, params, _success, _fail, shouldShowLoading = true, 
             request.setRequestHeader("Token", token);
             request.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
             request.setRequestHeader("X-CSRFToken", app.getCookie('csrftoken'));
+            request.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         }
     };
     obj.data = params;
@@ -95,7 +106,7 @@ app.request = function (url, params, _success, _fail, shouldShowLoading = true, 
 			if (_fail) {
 				_fail(json);
 			}else{
-				app.fail(null, json.message);
+				app.fail(null, json.msg);
 			}
 		} else {
 			__doneErr(json);
@@ -116,6 +127,95 @@ app.request = function (url, params, _success, _fail, shouldShowLoading = true, 
     // 执行ajax请求
     $.ajax(obj);
 };
+
+/**
+ * 初始化layui的table控件
+ * @param tableId
+ * @param requestUrl 请求URL
+ * @param params 请求参数
+ * @param isPage 是否分页：默认true
+ */
+app.initLayuiTable = function(tableId, requestUrl, params, isPage=true, _limit=25, method='GET'){
+	if(!isInclude('layui.css') || !isInclude('layui.all.js')){
+		app.alert('请引入layui.css && layui.all.js');
+	}else{
+		if(!params){
+			params = {};
+		}
+		let _table;
+		layui.use('table', function(){
+			let filter = $('#' + tableId).attr('lay-filter');
+			let _autoSort = true;
+			if(filter){
+				// server段排序
+				_autoSort = false;
+			}
+			_table = layui.table;
+			_table.set({
+				elem: '#' + tableId,
+				url: requestUrl,
+				method: method,
+				headers: {"X-Requested-With":"XMLHttpRequest", "token": app.getToken()},
+				where: params,
+				size: 'sm',
+				even: 'true',
+				autoSort: _autoSort,
+				text: {
+					none: '暂无相关数据'
+				}
+			});
+			if(isPage){
+				_table.set({
+					page: true,
+					limit: _limit,
+					limits: [10, 20, 25, 30, 50],
+					parseData: function(res){
+						let code = res.code;
+						let msg = res.msg;
+						if(code == 0){
+							return { "code": code, "msg": msg, "count": res.data.count, "data": res.data.list }
+						}else if(code == 1) {
+							// 接口返回业务失败
+							return { "code": code, "msg": msg, "count": 0, "data": [] }
+						} else {
+							__doneErr(res);
+						}
+					},
+				});
+			}else{
+				_table.set({
+					page:false,
+					parseData: function(res){
+
+						let code = res.status;
+						let msg = res.message;
+						if(code == 0){
+							return { "code": code, "msg": msg, "data": res.data }
+						}else if(code == 1) {
+							// 接口返回业务失败
+							return { "code": code, "msg": msg, "data": [] }
+						} else {
+							__doneErr(res);
+						}
+					},
+				});
+			}
+
+			// 监听排序
+			if(filter){
+				_table.on('sort(' + filter + ')', function(obj){
+					params['orderField'] = obj.field;
+					params['orderType'] = obj.type;
+					_table.reload(tableId, {
+						initSort: obj,
+						where: params
+					});
+				});
+			}
+		});
+		return _table;
+	}
+}
 
 /**
  * ajax请求，不显示加载中效果
@@ -144,13 +244,13 @@ app.sendMessage = function(url, params){
  * @param _cancel 点击取消按钮的回调函数
  */
 app.confirm = function(msg, _yes, _cancel){
-	top._layer.confirm(msg, {icon: 3, title: '提示'}, function(index){
-		top._layer.close(index);
+	layer.confirm(msg, {icon: 3, title: '提示'}, function(index){
+		layer.close(index);
 		if(_yes){
 			_yes(index);
 		}
 	}, function(index){
-		top._layer.close(index);
+		layer.close(index);
 		if(_cancel){
 			_cancel(index)
 		}
@@ -163,8 +263,8 @@ app.confirm = function(msg, _yes, _cancel){
  * @param _yes 点击确认按钮的回调函数
  */
 app.alert = function(msg, _yes){
-	top._layer.alert(msg, {icon: 0, title: '提示'}, function(index){
-		top._layer.close(index);
+	layer.alert(msg, {icon: 0, title: '提示'}, function(index){
+		layer.close(index);
 		if(_yes){
 			_yes(index);
 		}
@@ -180,8 +280,8 @@ app.success = function(_yes, msg){
 	if(!msg){
 		msg = '操作成功！'
 	}
-	top._layer.alert(msg, {icon: 6, title: '提示'}, function(index){
-		top._layer.close(index);
+	layer.alert(msg, {icon: 6, title: '提示'}, function(index){
+		layer.close(index);
 		if(_yes){
 			_yes(index);
 		}
@@ -197,8 +297,8 @@ app.fail = function(_yes, msg){
 	if(!msg){
 		msg = '操作失败，请稍后再试！'
 	}
-	top._layer.alert(msg, {icon: 5, title: '提示'}, function(index){
-		top._layer.close(index);
+	layer.alert(msg, {icon: 5, title: '提示'}, function(index){
+		layer.close(index);
 		if(_yes){
 			_yes(index);
 		}
@@ -209,7 +309,7 @@ app.fail = function(_yes, msg){
  * 显示加载中
  */
 app.showLoading = function(){
-	let index = top._layer.load(0, {shade: [0.6, '#999']});
+	let index = layer.load(0, {shade: [0.6, '#999']});
 	return index;
 }
 
@@ -218,9 +318,9 @@ app.showLoading = function(){
  */
 app.hideLoading = function(index){
 	if(index){
-		top._layer.close(index);
+		layer.close(index);
 	}else{
-		top._layer.closeAll('loading');
+		layer.closeAll('loading');
 	}
 }
 
@@ -228,8 +328,16 @@ app.hideLoading = function(index){
  * 请求异常情况处理
  */
 function __doneErr(jsonObj){
-	let code = jsonObj.status;
-	console.log(jsonObj);
+	let code = jsonObj.code;
+	if(code==8){
+	    // 需登录
+        app.removeToken();
+        app.clrSessionStorage();
+        window.location.href = '/dr/authc/login.html';
+	}
+	if(sysconf.DEV_MODE){
+	    console.log(jsonObj);
+	}
 }
 
 if(!sysconf.DEV_MODE){

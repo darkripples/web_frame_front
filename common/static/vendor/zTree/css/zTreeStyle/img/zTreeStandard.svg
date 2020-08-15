@@ -1,0 +1,182 @@
+<svg id="组_3" data-name="组 3" xmlns="http://www.w3.org/2000/svg" width="160" height="97" viewBox="0 0 160 97">
+  <defs>
+    <style>
+      .cls-1, .cls-12 {
+        fill: #ffbc00;
+      }
+
+      .cls-1, .cls-14, .cls-15, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ffd72e;
+      }
+
+      .cls-11, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #e2effc;
+      }
+
+      .cls-5 {
+        fill: #87a9dc;
+      }
+
+      .cls-10, .cls-6 {
+        fill: #507aba;
+      }
+
+      .cls-7 {
+        fill: #999;
+      }
+
+      .cls-8 {
+        fill: #333;
+      }
+
+      .cls-13, .cls-9 {
+        fill: #ccc;
+      }
+
+      .cls-14, .cls-16 {
+        fill: #0c0;
+      }
+
+      .cls-15 {
+        fill: #696;
+      }
+    </style>
+  </defs>
+  <path id="形状_1" data-name="形状 1" class="cls-1" d="M125,14H113a1,1,0,0,1-1-1V3a1,1,0,0,1,1-1h5.6a1,1,0,0,1,.692.278l1.474,1.409a0.916,0.916,0,0,0,.634.255H125a1,1,0,0,1,1,1V13A1,1,0,0,1,125,14Z"/>
+  <path id="形状_2" data-name="形状 2" class="cls-1" d="M122.983,21.954a0.99,0.99,0,0,1,.953.676L125,26V20.721a0.979,0.979,0,0,0-1-.956h-2.6a0.939,0.939,0,0,1-.635-0.243l-1.474-1.347a1.025,1.025,0,0,0-.692-0.265H113a0.979,0.979,0,0,0-1,.956v3.088h10.983Z"/>
+  <path id="形状_3" data-name="形状 3" class="cls-2" d="M123.856,29.97H112.6a1,1,0,0,1-.952-0.721l-1.46-4.936a1.01,1.01,0,0,1,.952-1.307H122.4a1,1,0,0,1,.953.721l1.46,4.936A1.01,1.01,0,0,1,123.856,29.97Z"/>
+  <path id="形状_5" data-name="形状 5" class="cls-3" d="M124,46H113V33h9l2,3V46Z"/>
+  <path id="形状_6" data-name="形状 6" class="cls-4" d="M116,45h7V37h-2Z"/>
+  <path id="形状_4" data-name="形状 4" class="cls-5" d="M122,33h-9V46h11V36Zm0.972,12h-9V34H121v3h1.972v8Z"/>
+  <path id="形状_5-2" data-name="形状 5" class="cls-3" d="M124,62H113V49h9l2,3V62Z"/>
+  <path id="形状_6-2" data-name="形状 6" class="cls-4" d="M116,61h7V53h-2Z"/>
+  <path id="形状_4-2" data-name="形状 4" class="cls-5" d="M122,49h-9V62h11V52Zm0.972,12h-9V50H121v3h1.972v8Z"/>
+  <path id="形状_13" data-name="形状 13" class="cls-6" d="M125.99,56.9l-5.085,6.086H119v-1.9L124.089,55l1.427,0.474Z"/>
+  <path id="形状_9" data-name="形状 9" class="cls-7" d="M78,5v9h9V5H78Zm7.991,8.022h-7V5.984h7v7.038Z"/>
+  <path id="形状_10" data-name="形状 10" class="cls-8" d="M85,9H83V7H82V9H80v1h2v2h1V10h2V9Z"/>
+  <path id="形状_9-2" data-name="形状 9" class="cls-7" d="M96,5v9h9V5H96Zm7.991,8.022h-7V5.984h7v7.038Z"/>
+  <path id="形状_11" data-name="形状 11" class="cls-8" d="M103,10H98V9h5v1Z"/>
+  <path id="形状_9-3" data-name="形状 9" class="cls-7" d="M78,23v9h9V23H78Zm7.991,8.022h-7V23.984h7v7.038Z"/>
+  <path id="形状_10-2" data-name="形状 10" class="cls-8" d="M85,27H83V25H82v2H80v1h2v2h1V28h2V27Z"/>
+  <path id="形状_9-4" data-name="形状 9" class="cls-7" d="M96,23v9h9V23H96Zm7.991,8.022h-7V23.984h7v7.038Z"/>
+  <path id="形状_11-2" data-name="形状 11" class="cls-8" d="M103,28H98V27h5v1Z"/>
+  <path id="形状_9-5" data-name="形状 9" class="cls-7" d="M78,41v9h9V41H78Zm7.991,8.022h-7V41.984h7v7.038Z"/>
+  <path id="形状_10-3" data-name="形状 10" class="cls-8" d="M85,45H83V43H82v2H80v1h2v2h1V46h2V45Z"/>
+  <path id="形状_9-6" data-name="形状 9" class="cls-7" d="M96,41v9h9V41H96Zm7.991,8.022h-7V41.984h7v7.038Z"/>
+  <path id="形状_11-3" data-name="形状 11" class="cls-8" d="M103,46H98V45h5v1Z"/>
+  <path id="形状_9-7" data-name="形状 9" class="cls-7" d="M78,59v9h9V59H78Zm7.991,8.022h-7V59.984h7v7.038Z"/>
+  <path id="形状_10-4" data-name="形状 10" class="cls-8" d="M85,63H83V61H82v2H80v1h2v2h1V64h2V63Z"/>
+  <path id="形状_9-8" data-name="形状 9" class="cls-7" d="M96,59v9h9V59H96Zm7.991,8.022h-7V59.984h7v7.038Z"/>
+  <path id="形状_11-4" data-name="形状 11" class="cls-8" d="M103,64H98V63h5v1Z"/>
+  <path id="形状_9-9" data-name="形状 9" class="cls-7" d="M81,77v9h9V77H81Zm7.991,8.022h-7V77.984h7v7.038Z"/>
+  <path id="形状_10-5" data-name="形状 10" class="cls-8" d="M88,81H86V79H85v2H83v1h2v2h1V82h2V81Z"/>
+  <path id="形状_9-10" data-name="形状 9" class="cls-7" d="M99,77v9h9V77H99Zm7.991,8.022h-7V77.984h7v7.038Z"/>
+  <path id="形状_11-5" data-name="形状 11" class="cls-8" d="M106,82h-5V81h5v1Z"/>
+  <path id="形状_12" data-name="形状 12" class="cls-9" d="M82.021,14.953v1h1v-1h-1Zm0,3.01h1v-1h-1v1Zm0,2.008h1v-1h-1v1Zm0,1.987h1v-1h-1v1ZM90.022,9v1h1V9h-1ZM88.038,9v1h1V9h-1ZM108,9v1h1V9h-1Zm-1.984,0v1h1V9h-1Zm-16,17.947v1h1v-1h-1Zm-1.983,0v1h1v-1h-1Zm19.965,0v1h1v-1h-1Zm-1.984,0v1h1v-1h-1Zm-16,18.045v1h1v-1h-1Zm-1.983,0v1h1v-1h-1Zm19.965,0v1h1v-1h-1Zm-1.984,0v1h1v-1h-1ZM90.022,63v1h1V63h-1Zm-1.983,0v1h1V63h-1ZM108,63v1h1V63h-1Zm-1.984,0v1h1V63h-1Zm-5.983-48.046v1h1v-1h-1Zm0,3.01h1v-1h-1v1Zm0,2.008h1v-1h-1v1Zm0,1.987h1v-1h-1v1ZM82.021,32.982v1h1v-1h-1Zm0,3.01h1v-1h-1v1Zm0,2.008h1V37h-1v1Zm0,1.987h1v-1h-1v1Zm-8.962,5.006h-1v1h1v-1Zm-3,0v1h1v-1h-1Zm-2,0v1h1v-1h-1Zm-1.983,0v1h1v-1h-1Zm6.991-18.045h-1v1h1v-1Zm-3,0v1h1v-1h-1Zm-2,0v1h1v-1h-1Zm-1.983,0v1h1v-1h-1ZM73.059,9h-1v1h1V9Zm-3,0v1h1V9h-1Zm-2,0v1h1V9h-1ZM66.068,9v1h1V9h-1ZM65,16.006v-1H64v1h1ZM65,13H64v1h1V13Zm0-2.008H64v1h1v-1ZM65,9H64v1h1V9Zm0,14.966v-1H64v1h1Zm0-3.01H64v1h1v-1Zm0-2.008H64v1h1v-1Zm0-1.987H64v1h1v-1Zm0,14.966v-1H64v1h1Zm0-3.01H64v1h1v-1Zm0-2.008H64v1h1v-1Zm0-1.987H64v1h1v-1Zm0,15.064v-1H64v1h1Zm0-3.01H64v1h1v-1Zm0-2.008H64v1h1v-1Zm0-1.987H64v1h1v-1Zm0,13.009v-1H64v1h1Zm0-3.01H64v1h1v-1Zm0-2.008H64v1h1v-1Zm0-1.987H64v1h1v-1Zm35.038-6v1h1v-1h-1Zm0,3.01h1v-1h-1v1Zm0,2.008h1V37h-1v1Zm0,1.987h1v-1h-1v1Z"/>
+  <g id="组_5" data-name="组 5">
+    <rect id="矩形_1" data-name="矩形 1" class="cls-10" width="13" height="13"/>
+    <rect id="矩形_1_拷贝" data-name="矩形 1 拷贝" class="cls-11" x="1" y="1" width="11" height="11"/>
+  </g>
+  <g id="组_5_拷贝" data-name="组 5 拷贝">
+    <rect id="矩形_1-2" data-name="矩形 1" class="cls-10" x="14" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-2" data-name="矩形 1 拷贝" class="cls-11" x="15" y="1" width="11" height="11"/>
+  </g>
+  <g id="组_5_拷贝_2" data-name="组 5 拷贝 2">
+    <rect id="矩形_1-3" data-name="矩形 1" class="cls-10" y="14" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-3" data-name="矩形 1 拷贝" class="cls-12" x="1" y="15" width="11" height="11"/>
+    <rect id="矩形_1_拷贝_2" data-name="矩形 1 拷贝 2" class="cls-11" x="3" y="17" width="7" height="7"/>
+  </g>
+  <g id="组_5_拷贝_3" data-name="组 5 拷贝 3">
+    <rect id="矩形_1-4" data-name="矩形 1" class="cls-10" x="14" y="14" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-4" data-name="矩形 1 拷贝" class="cls-12" x="15" y="15" width="11" height="11"/>
+    <rect id="矩形_1_拷贝_2-2" data-name="矩形 1 拷贝 2" class="cls-11" x="17" y="17" width="7" height="7"/>
+  </g>
+  <g id="组_5_拷贝_4" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-5" data-name="矩形 1" class="cls-10" y="28" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-5" data-name="矩形 1 拷贝" class="cls-13" x="1" y="29" width="11" height="11"/>
+  </g>
+  <g id="组_5_拷贝_4-2" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-6" data-name="矩形 1" class="cls-10" x="14" y="28" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-6" data-name="矩形 1 拷贝" class="cls-13" x="15" y="29" width="11" height="11"/>
+  </g>
+  <g id="组_5_拷贝_5" data-name="组 5 拷贝 5">
+    <rect id="矩形_1-7" data-name="矩形 1" class="cls-13" y="56" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-7" data-name="矩形 1 拷贝" class="cls-11" x="1" y="57" width="11" height="11"/>
+  </g>
+  <g id="组_5_拷贝_5-2" data-name="组 5 拷贝 5">
+    <rect id="矩形_1-8" data-name="矩形 1" class="cls-13" x="14" y="56" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-8" data-name="矩形 1 拷贝" class="cls-11" x="15" y="57" width="11" height="11"/>
+  </g>
+  <g id="组_5_拷贝_4-3" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-9" data-name="矩形 1" class="cls-10" y="42" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-9" data-name="矩形 1 拷贝" class="cls-12" x="1" y="43" width="11" height="11"/>
+    <rect id="矩形_1_拷贝_2-3" data-name="矩形 1 拷贝 2" class="cls-13" x="3" y="45" width="7" height="7"/>
+  </g>
+  <g id="组_5_拷贝_4-4" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-10" data-name="矩形 1" class="cls-10" x="14" y="42" width="13" height="13"/>
+    <rect id="矩形_1_拷贝-10" data-name="矩形 1 拷贝" class="cls-12" x="15" y="43" width="11" height="11"/>
+    <rect id="矩形_1_拷贝_2-4" data-name="矩形 1 拷贝 2" class="cls-13" x="17" y="45" width="7" height="7"/>
+  </g>
+  <path id="形状_14" data-name="形状 14" class="cls-14" d="M18.958,6.226l0.949,1.887S21.449,4.278,23.881,3A5.166,5.166,0,0,0,24,5.678c-1.068.243-3.263,2.983-3.975,4.322A8.263,8.263,0,0,0,17,7.443Z"/>
+  <path id="形状_14_拷贝" data-name="形状 14 拷贝" class="cls-14" d="M18.958,20.226l0.949,1.887S21.449,18.278,23.881,17A5.167,5.167,0,0,0,24,19.678c-1.068.243-3.263,2.983-3.975,4.322A8.262,8.262,0,0,0,17,21.444Z"/>
+  <path id="形状_14_拷贝_2" data-name="形状 14 拷贝 2" class="cls-14" d="M18.958,34.226l0.949,1.887S21.449,32.278,23.881,31A5.167,5.167,0,0,0,24,33.678c-1.068.243-3.263,2.983-3.975,4.322A8.262,8.262,0,0,0,17,35.444Z"/>
+  <path id="形状_14_拷贝_3" data-name="形状 14 拷贝 3" class="cls-15" d="M18.958,48.226l0.949,1.887S21.449,46.278,23.881,45A5.167,5.167,0,0,0,24,47.678c-1.068.243-3.263,2.983-3.975,4.322A8.262,8.262,0,0,0,17,49.444Z"/>
+  <path id="形状_14_拷贝_4" data-name="形状 14 拷贝 4" class="cls-9" d="M18.958,62.226l0.949,1.887S21.449,60.278,23.881,59A5.167,5.167,0,0,0,24,61.678c-1.068.243-3.263,2.983-3.975,4.322A8.262,8.262,0,0,0,17,63.444Z"/>
+  <g id="组_5-2" data-name="组 5">
+    <rect id="矩形_1-11" data-name="矩形 1" class="cls-10" x="28" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-11" data-name="矩形 1 拷贝" class="cls-11" x="29" y="1" width="11" height="11" rx="5.5" ry="5.5"/>
+  </g>
+  <g id="组_5_拷贝-2" data-name="组 5 拷贝">
+    <rect id="矩形_1-12" data-name="矩形 1" class="cls-10" x="42" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-12" data-name="矩形 1 拷贝" class="cls-11" x="43" y="1" width="11" height="11" rx="5.5" ry="5.5"/>
+  </g>
+  <g id="组_5_拷贝_2-2" data-name="组 5 拷贝 2">
+    <rect id="矩形_1-13" data-name="矩形 1" class="cls-10" x="28" y="14" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-13" data-name="矩形 1 拷贝" class="cls-12" x="29" y="15" width="11" height="11" rx="5.5" ry="5.5"/>
+    <rect id="矩形_1_拷贝_2-5" data-name="矩形 1 拷贝 2" class="cls-11" x="31" y="17" width="7" height="7" rx="3.5" ry="3.5"/>
+  </g>
+  <g id="组_5_拷贝_3-2" data-name="组 5 拷贝 3">
+    <rect id="矩形_1-14" data-name="矩形 1" class="cls-10" x="42" y="14" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-14" data-name="矩形 1 拷贝" class="cls-12" x="43" y="15" width="11" height="11" rx="5.5" ry="5.5"/>
+    <rect id="矩形_1_拷贝_2-6" data-name="矩形 1 拷贝 2" class="cls-11" x="45" y="17" width="7" height="7" rx="3.5" ry="3.5"/>
+  </g>
+  <g id="组_5_拷贝_4-5" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-15" data-name="矩形 1" class="cls-10" x="28" y="28" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-15" data-name="矩形 1 拷贝" class="cls-13" x="29" y="29" width="11" height="11" rx="5.5" ry="5.5"/>
+  </g>
+  <g id="组_5_拷贝_4-6" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-16" data-name="矩形 1" class="cls-10" x="42" y="28" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-16" data-name="矩形 1 拷贝" class="cls-13" x="43" y="29" width="11" height="11" rx="5.5" ry="5.5"/>
+  </g>
+  <g id="组_5_拷贝_5-3" data-name="组 5 拷贝 5">
+    <rect id="矩形_1-17" data-name="矩形 1" class="cls-13" x="28" y="56" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-17" data-name="矩形 1 拷贝" class="cls-11" x="29" y="57" width="11" height="11" rx="5.5" ry="5.5"/>
+  </g>
+  <g id="组_5_拷贝_5-4" data-name="组 5 拷贝 5">
+    <rect id="矩形_1-18" data-name="矩形 1" class="cls-13" x="42" y="56" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-18" data-name="矩形 1 拷贝" class="cls-11" x="43" y="57" width="11" height="11" rx="5.5" ry="5.5"/>
+  </g>
+  <g id="组_5_拷贝_4-7" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-19" data-name="矩形 1" class="cls-10" x="28" y="42" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-19" data-name="矩形 1 拷贝" class="cls-12" x="29" y="43" width="11" height="11" rx="5.5" ry="5.5"/>
+    <rect id="矩形_1_拷贝_2-7" data-name="矩形 1 拷贝 2" class="cls-13" x="31" y="45" width="7" height="7" rx="3.5" ry="3.5"/>
+  </g>
+  <g id="组_5_拷贝_4-8" data-name="组 5 拷贝 4">
+    <rect id="矩形_1-20" data-name="矩形 1" class="cls-10" x="42" y="42" width="13" height="13" rx="6.5" ry="6.5"/>
+    <rect id="矩形_1_拷贝-20" data-name="矩形 1 拷贝" class="cls-12" x="43" y="43" width="11" height="11" rx="5.5" ry="5.5"/>
+    <rect id="矩形_1_拷贝_2-8" data-name="矩形 1 拷贝 2" class="cls-13" x="45" y="45" width="7" height="7" rx="3.5" ry="3.5"/>
+  </g>
+  <circle id="椭圆_1" data-name="椭圆 1" class="cls-16" cx="48.5" cy="6.5" r="2.5"/>
+  <circle id="椭圆_1_拷贝" data-name="椭圆 1 拷贝" class="cls-16" cx="48.5" cy="20.5" r="2.5"/>
+  <circle id="椭圆_1_拷贝_2" data-name="椭圆 1 拷贝 2" class="cls-16" cx="48.5" cy="34.5" r="2.5"/>
+  <circle id="椭圆_1_拷贝_3" data-name="椭圆 1 拷贝 3" class="cls-16" cx="48.5" cy="48.5" r="2.5"/>
+  <circle id="椭圆_1_拷贝_4" data-name="椭圆 1 拷贝 4" class="cls-13" cx="48.5" cy="62.5" r="2.5"/>
+</svg>

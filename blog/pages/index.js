@@ -5,6 +5,7 @@ $(function () {
             initUrl:"/blog",
             listData:[],
             titleValue:'darkripples',
+            typeId:'',
             blogType:'',
             limit:15,
             page:1,
@@ -17,13 +18,40 @@ $(function () {
             this.$nextTick(function () {
                 let that = this;
                 let urlDic = getUrlParams(location.search);
+                that.typeId = urlDic.type;
+                var url = window.location.toString();
+                var id = url.split("#")[1];
+                if(that.typeId){
+                    var typeListStr = window.sessionStorage.getItem("dr_blog_types");
+                    if(typeListStr){
+                        // 修改title
+                        var typeList = JSON.parse(typeListStr);
+                        var typeName = "";
+                        for(var i=0;i<typeList.length;i++){
+                            if(typeList[i].typeId==that.typeId){
+                                typeName = typeList[i].typeName;
+                                break;
+                            }
+                        }
+                        if(typeName){
+                            $("title").html(typeName + " - " + $("title").html());
+                        }else{
+                            // 不存在的话其实是不合法的
+                            that.typeId = "";
+                            id = "";
+                        }
+
+                    }else{
+                        // 不存在的话其实是不合法的
+                        that.typeId = "";
+                        id = "";
+                    }
+                }
                 that.page = urlDic.page ? parseInt(urlDic.page) : that.page;
                 that.blogType = urlDic.type || '';
                 // 主内容
                 that.indexList();
                 // 锚点确定
-                var url = window.location.toString();
-                var id = url.split("#")[1];
                 if(id){
                     $("#headerDown").click();
                 }
@@ -65,6 +93,10 @@ $(function () {
             // 分页初始化
             loadpage: function(currentPage, count){
                 let that = this;
+                var searchStr = "";
+                if(that.typeId){
+                    searchStr += "?type="+that.typeId;
+                }
                 var myPageCount = count;
                 var myPageSize = that.limit;
                 //var countindex = Math.ceil((myPageCount % myPageSize) > 0 ? (myPageCount / myPageSize) + 1 : (myPageCount / myPageSize));
@@ -73,7 +105,7 @@ $(function () {
                     totalPages: count,//parseInt($("#countindex").val()),
                     visiblePages: that.visiblePages,
                     currentPage: currentPage,
-                    first: '<a class="pagination__item" href="/blog">首页</a>',
+                    first: '<a class="pagination__item" href="/blog'+searchStr+'">首页</a>',
                     prev: '<a class="pagination__item vditor-tooltipped__n vditor-tooltipped" aria-label="上一页" href="javascript:;">上页</a>',
                     next: '<a class="pagination__item vditor-tooltipped__n vditor-tooltipped" aria-label="下一页" href="javascript:;">下页</a>',
                     last: '<a class="pagination__item" href="javascript:;">末页</a>',

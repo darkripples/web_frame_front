@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -23,9 +23,34 @@
     <meta property="og:url" content="/"/>
     <meta property="og:image" content="/img/fls.jpg"/>
     <link rel="canonical" content="/"/>
+    <link rel="stylesheet" href="/common/static/css/err_page/404.css">
 </head>
-<body>
-Oh god,There's a 404 coming up~~
-Please Contact Darkripples[fls25@qq.com].
+<body onclick="javascript:window.location.href='https://www.darkripples.com'" >
+<div class="text">
+    <h1>404</h1>
+    <h2>看到这个页面说明您访问的资源(页面)是不存在的……</h2>
+    <h3>至于为啥子不存在呢，可能是之前有，现在么有了；也可能是你访问了一个错误的url……
+        <br/>
+        如果是前者，请联系 fls@darkripples.com 获取您想访问的资源~
+    </h3>
+    <br/>
+    <h4 >
+        →点击任意位置返回首页←
+    </h4>
+</div>
+<div class="torch"></div>
+
 </body>
+<script type="text/javascript" src="/common/static/js/libs/jquery/jquery.min.js"></script>
+<script>
+$(document).mousemove(function (event) {
+  $('.torch').css({
+    'top': event.pageY,
+    'left': event.pageX
+  });
+});
+
+
+
+</script>
 </html>

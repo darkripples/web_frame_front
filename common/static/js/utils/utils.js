@@ -296,3 +296,55 @@ function __goPage(funcName) {
         eval(funcName + "(" + pageNum + ")");
     }
 }
+
+/**
+ * 验证手机号
+ * @param value
+ */
+var validateMobilePhone = ( value ) => {
+    if (value === '') {
+        return false;
+    } else {
+        if (value !== '') {
+            var reg=/^1[3456789]\d{9}$/;
+            if(!reg.test(value)){
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+/**
+ * 验证邮箱
+ * @param value
+ * @returns {boolean}
+ */
+var validateEmail = (value) => {
+    if (value === '') {
+        return false;
+    } else {
+        if (value !== '') {
+            var reg=/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+            if(!reg.test(value)){
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+/**
+ 获取数据
+*/
+function getStorage(k){
+    return window.sessionStorage.getItem('dr_' + k);
+}
+
+/**
+ 存入数据
+*/
+function setStorage(k, v){
+    // json类型需JSON.stringify(json.data)
+    window.sessionStorage.setItem('dr_' + k, v);
+}

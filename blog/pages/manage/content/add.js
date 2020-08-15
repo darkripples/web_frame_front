@@ -101,7 +101,7 @@ $(function(){
                     that.dataInfo.title = dataInfo.title;
                     that.dataInfo.content = dataInfo.content;
                     that.dataInfo.titleNotes = dataInfo.titleNotes;
-                    that.dataInfo.readLevel = dataInfo.readLevel;
+                    that.dataInfo.rLevel = dataInfo.readLevel;
                     that.dataInfo.blogType = dataInfo.blogType;
                     that.dataInfo.blogTags = dataInfo.blogTags;
                     that.headImg = dataInfo.bgUrl ? dataInfo.bgUrl : window.location.host+dataInfo;
